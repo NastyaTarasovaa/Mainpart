@@ -1,0 +1,22 @@
+.contact {
+    display: grid;
+    grid-template-areas: "contact_title contact_title"
+        "input_form picture";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 2vw;
+    margin-top: 2vh;
+    /* align-items: center; */
+}
+
+.contact_title {
+    grid-area: contact_title;
+}
+
+form {
+    grid-area: input_form;
+}
+
+.picture {
+    grid-area: picture;
+}
