@@ -17,7 +17,7 @@
 .mission1 {
     display: grid;
     grid-template-columns: 1 fr 1fr;
-    grid-template-rows: 1 fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
 
@@ -81,7 +81,7 @@
     justify-items: center;
 }
 
-image {
+.pic {
     display: grid;
     grid-column: 2/3;
     grid-row: 1/2;
