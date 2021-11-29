@@ -11,6 +11,7 @@
     grid-template-rows: 1fr 1fr;
     background-color: #BDBDBD22;
     gap: 20px;
+    margin-top: 70px;
 
 }
 
@@ -43,14 +44,14 @@
     margin-left: 50px;
 }
 
-.pic1 {
+.about__pic1 {
     display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
     margin-top: 20px;
 }
 
-.pic2 {
+.about__pic2 {
     display: grid;
     grid-column: 2/3;
     grid-row: 1/3;
