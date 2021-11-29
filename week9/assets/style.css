@@ -1,0 +1,248 @@
+.lorum {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #BDBDBD22;
+    gap: 20px;
+    margin-top: 70px;
+
+}
+
+.about__pic1 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 20px;
+}
+
+.about__pic2 {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-items: start;
+    margin-top: 50px;
+
+}
+
+.about__pic3 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.text {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+
+.name_project {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    justify-items: center;
+}
+
+.lorum__pic {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-items: end;
+
+}
+
+/*Текст*/
+
+h1,
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+
+.about__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.lorum__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: #333333
+}
+
+
+/* Вторая часть */
+
+.mission {
+    display: grid;
+    grid-template-areas: "mission__title"
+        "mission__statement";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    margin-top: 10vh;
+}
+
+.mission__title {
+    grid-area: mission__title;
+}
+
+.mission__statement {
+    grid-area: mission__statement;
+}
+
+.project {
+    display: grid;
+    grid-template-areas: "project__title"
+        "project__image1"
+        "project__image2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    gap: 2vw;
+}
+
+.project__image1 {
+    display: grid;
+    grid-template-areas: "image__item1 image__item2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2vw;
+    grid-area: project__image1;
+}
+
+.project__image2 {
+    display: grid;
+    grid-template-areas: "image__item3 image__item4 image__item5";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2vw;
+    grid-area: project__image2;
+}
+
+.project__title {
+    grid-area: project__title;
+}
+
+.image__item1 {
+    grid-area: image__item1;
+    display: inline-block;
+    position: relative;
+}
+
+.image1__text {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(51, 51, 51, .8);
+    padding-top: 8vh;
+    padding-left: 5vw;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+}
+
+.image__item1:hover div {
+    display: block
+}
+
+.image__item2 {
+    grid-area: image__item2;
+}
+
+.image__item3 {
+    grid-area: image__item3;
+}
+
+.image__item4 {
+    grid-area: image__item4;
+}
+
+.image__item5 {
+    grid-area: image__item5;
+}
+
+
+.contact {
+    display: grid;
+    grid-template-areas: "contact_title contact_title"
+        "input_form picture";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 6fr;
+    gap: 2vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.contact_title {
+    grid-area: contact_title;
+}
+
+form {
+    grid-area: input_form;
+}
+
+.picture {
+    grid-area: picture;
+}
+
+.backcolor {
+    background: #F3F3F3;
+    color: #8D8D8D;
+}
+
+/* Шрифты вторая часть*/
+h1,
+.textstyle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+
+.textstyle {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+}
+
+.image1__text h1 {
+    font-weight: bold;
+    color: white;
+}
+
+.image1__text p {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
