@@ -54,6 +54,26 @@
 
 .image__item1 {
     grid-area: image__item1;
+    display: inline-block;
+    position: relative;
+}
+
+.image1__text {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(51, 51, 51, .8);
+    padding-top: 8vh;
+    padding-left: 5vw;
+    color: white;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+}
+
+.image__item1:hover div {
+    display: block
 }
 
 .image__item2 {
